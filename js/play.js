@@ -1927,7 +1927,7 @@ document.getElementById("dexList").onclick = function() {
 function printObject(randomObject, formId) {
  // Get a reference to the form
  const form = document.getElementById(formId);
-
+form.className = "msg"
  // Remove previous elements from the form
  while (form.firstChild) {
    form.removeChild(form.firstChild);
