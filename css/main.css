@@ -4,7 +4,7 @@
 
 .titleText {
   text-align: center;
-  background: linear-gradient(to right,  #cacaca 25%, #5B9EA7 50%, #4E6C9A 75%);
+  background: linear-gradient(to right,  #DADADA 25%, #5B9EA7 50%, #4E6C9A 75%);
  		  -webkit-background-clip: text;
       background-clip: text;
   		-webkit-text-fill-color: transparent;
