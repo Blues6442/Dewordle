@@ -1,0 +1,90 @@
+.format {
+    text-align: center;
+    background-color: #DADADA;
+    border: solid black 3px;
+    width: 90%;
+    padding-top: 25px;
+    padding-bottom: 40px;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+      
+      .format2 {
+          text-align: center;
+          background-color: #DADADA;
+          border: solid black 3px;
+          width: 90%;
+          height: 90%;
+          padding-top: 30%;
+          padding-bottom: 30%;
+          margin-top: 5%;
+          margin-right: 5%;
+          margin-left: 5%;
+          margin-bottom: 5%;
+          font-family: "Lucida Console", monospace;
+          font-size: 10.0vw;
+          
+      }
+
+  .pokemon {
+    text-align: center;
+    background-color: #DADADA;
+    border: solid black 3px;
+    width: 90%;
+    height: 100px;
+    padding-top: 25px;
+    padding-bottom: 40px;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .result {
+    font-family: "Lucida Console", monospace;
+    font-size: 2.5vw;
+    text-align: center;
+    background-color: #DADADA;
+    border: solid black 3px;
+    width: 90%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+  }
+  
+  .enterPokemon {
+    font-family: "Lucida Console", monospace;
+    text-align: center;
+    font-size: 4.5vw;
+  }
+
+  h1 {
+    font-size: 7vw;
+    font-family: "Lucida Console", monospace;
+  }
+
+  .buton {
+    font-size: 3.2vw;
+    font-family: "Lucida Console", monospace;
+  }
+      
+      .buton2 {
+          font-size: 5.0vw;
+          font-family: "Lucida Console", monospace;
+      }
+
+  .outputs {
+    font-size: 2vw;
+  }
+   .menu{
+    font-family: "Lucida Console", monospace;
+    font-size: 2.0vw;
+  }
+
+  body {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYiAAtZ8BWznWjrf4R8gXzOZutc-p6agKy6Q:https://media.istockphoto.com/id/1092819250/vector/seamless-polygon-background-pattern-polygonal-gray-wallpaper-vector-illustration.jpg%3Fs%3D612x612%26w%3D0%26k%3D20%26c%3DcWmhSI0sRaQ2kiQhc4-0HtTHGELZL3a_w8Zz7AuPtxg%3D&usqp=CAU")
+      /*background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Solid_white.svg/2048px-Solid_white.svg.png")*/
+  }
