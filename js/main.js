@@ -1913,7 +1913,7 @@ let Dex = [{
 
 ];
 var highscore = localStorage.getItem("highscore");
-document.getElementById("howTo").onclick = function () {
+document.getElementById("howto").onclick = function () {
   location.href = "howToPlay.html";
 };
 document.getElementById("dexList").onclick = function() {
