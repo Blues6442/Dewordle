@@ -22,7 +22,7 @@ document.getElementById("musicOff").onlcikc = function(){
 
 document.getElementById("musicOff").style.display = 'none';
 
-alert("Welcome to Dewott! Press OK to start the game")
+//alert("Welcome to Dewott! Press OK to start the game")
 var score = 0;
 var txt;
 
