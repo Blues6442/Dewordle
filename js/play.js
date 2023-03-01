@@ -1962,6 +1962,7 @@ function printMessage(message, formId) {
  const div = document.createElement('div');
  const msg = document.createElement('label');
  msg.innerHTML = message;
+ msg.className = "msg";
  div.appendChild(msg);
 
  form.insertBefore(div, form.firstChild);
