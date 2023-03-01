@@ -13,7 +13,7 @@ audio.play();
 }, false);
 }
 
-document.getElementById("musicOff").onlcick = function(){
+document.getElementById("musicOff").onclick = function(){
   document.getElementById("music").style.display = 'initial';
   document.getElementById("musicOff").style.display = 'none';
 
