@@ -1,7 +1,13 @@
+:root {
+    --gradient: linear-gradient(to right, #52BDBD , #C49428 ) 1;
+  }
+
 .format {
     text-align: center;
-    background-color: #DADADA;
-    border: solid black 3px;
+    background-color: rgba(255,255,255,0.1);
+    border-image: var(--gradient);
+    border-width: 3px;
+    border-style: solid;
     width: 90%;
     padding-top: 25px;
     padding-bottom: 40px;
@@ -12,8 +18,10 @@
       
       .format2 {
           text-align: center;
-          background-color: #DADADA;
-          border: solid black 3px;
+          background-color: rgba(255,255,255,0.1);
+          border-image: var(--gradient);
+          border-width: 3px;
+          border-style: solid;
           width: 90%;
           height: 90%;
           padding-top: 30%;
@@ -29,8 +37,10 @@
 
   .pokemon {
     text-align: center;
-    background-color: #DADADA;
-    border: solid black 3px;
+    background-color:rgba(255,255,255,0.1);
+    border-image:  var(--gradient);
+    border-width: 3px;
+    border-style: solid;
     width: 90%;
     height: 100px;
     padding-top: 25px;
@@ -44,15 +54,16 @@
     font-family: "Lucida Console", monospace;
     font-size: 2.5vw;
     text-align: center;
-    background-color: #DADADA;
-    border: solid black 3px;
+    background-color: rgba(255,255,255,0.1);
+    border-image: var(--gradient);
+    border-width: 3px;
+    border-style: solid;
     width: 90%;
     padding-top: 25px;
     padding-bottom: 25px;
     margin-top: 5%;
     margin-left: 5%;
     margin-right: 5%;
-
   }
   
   .enterPokemon {
@@ -65,11 +76,21 @@
     font-size: 7vw;
     font-family: "Lucida Console", monospace;
   }
-
-  .buton {
-    font-size: 3.2vw;
+.search{
+    font-size: 3em;
     font-family: "Lucida Console", monospace;
-  }
+}
+  .buton{
+    cursor: pointer;
+         border: 1px solid #3498db;
+         background-color: rgba(255, 255, 255, 0.7);
+         height: 50px;
+         width: 200px;
+         color: #3498db;
+         font-size: 1.5em;
+         box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+         transition: 0.4s ease-in-out;
+ }
       
       .buton2 {
           font-size: 5.0vw;
@@ -85,6 +106,11 @@
   }
 
   body {
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYiAAtZ8BWznWjrf4R8gXzOZutc-p6agKy6Q:https://media.istockphoto.com/id/1092819250/vector/seamless-polygon-background-pattern-polygonal-gray-wallpaper-vector-illustration.jpg%3Fs%3D612x612%26w%3D0%26k%3D20%26c%3DcWmhSI0sRaQ2kiQhc4-0HtTHGELZL3a_w8Zz7AuPtxg%3D&usqp=CAU")
+    background-image: url("https://i.pinimg.com/originals/af/5e/d2/af5ed23d4007c6fdb2a4693534c16ffa.jpg");
       /*background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Solid_white.svg/2048px-Solid_white.svg.png")*/
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+    margin: auto;
+    width: 100%;
   }
