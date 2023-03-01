@@ -30,7 +30,8 @@
           margin-right: 5%;
           margin-left: 5%;
           margin-bottom: 5%;
-          font-family: "Lucida Console", monospace;
+          font-family: Arial;
+          font-weight: bold;
           font-size: 10.0vw;
           
       }
@@ -51,7 +52,8 @@
   }
 
   .result {
-    font-family: "Lucida Console", monospace;
+    font-family: Arial;
+    font-weight: bold
     font-size: 2.5vw;
     text-align: center;
     background-color: rgba(255,255,255,0.1);
@@ -67,18 +69,21 @@
   }
   
   .enterPokemon {
-    font-family: "Lucida Console", monospace;
+    font-family: Arial;
     text-align: center;
     font-size: 4.5vw;
+    font-weight: bold;
   }
 
   h1 {
     font-size: 7vw;
-    font-family: "Lucida Console", monospace;
+    font-family: Arial;
+    font-weight: bold;
   }
 .search{
     font-size: 3em;
-    font-family: "Lucida Console", monospace;
+    font-family: Arial;
+    font-weight: bold;
 }
   .buton{
     cursor: pointer;
@@ -94,14 +99,16 @@
       
       .buton2 {
           font-size: 5.0vw;
-          font-family: "Lucida Console", monospace;
+          font-family: Arial;
+          font-weight: bold;
       }
 
   .outputs {
     font-size: 2vw;
   }
    .menu{
-    font-family: "Lucida Console", monospace;
+    font-family: Arial;
+    font-weight: bold;
     font-size: 2.0vw;
   }
 
