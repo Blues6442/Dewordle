@@ -2,7 +2,7 @@
 <html>
 
 		<head>
-            <title>DEWORDLE</title>
+            <title class="dewordleTitle">DEWORDLE</title>
             <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
             <script type="text/javascript" src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
             <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
@@ -10,21 +10,21 @@
         </head>
   <body>
     <div class="format" id="scrollPoint">
-    <h1>DEWORDLE</h1>
-    <button style="background-color:#C8C8C8; border-color:black" id="dexList" class="buton">List of Pokemon</button>
+    <h1 class="titleText">DEWORDLE</h1>
+    <button id="dexList" class="buton">List of Pokemon</button>
       
-    <button style="background-color:#C8C8C8; border-color:black" id="howto" class="buton">How To Play</button>
-     <button class="buton" style="background-color:#C8C8C8; border-color:black" id="music">
+    <button id="howto" class="buton">How To Play</button>
+     <button class="buton" id="music">
     Music On
     </button>
-    <button class="buton" style="background-color:#C8C8C8; border-color:black" id="musicOff">
+    <button class="buton" id="musicOff">
     Music Off
     </button>
       <h2 class="enterPokemon">Enter a Generation 5 Pokémon!</h2>
       <input id="pname" class="search" />
-      <button style="background-color:#C8C8C8; border-color:black" id="find" class="buton">Guess</button>
+      <button id="find" class="buton">Guess</button>
       
-      <button style="background-color:#C8C8C8; border-color:black" id="reroll" class="buton">New Game</button>
+      <button id="reroll" class="buton">New Game</button>
     </div>
     <div class="result" id="resultid">
       <p id="pokemon" class="outputs" />
