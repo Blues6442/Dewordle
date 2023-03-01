@@ -6,12 +6,13 @@
   text-align: center;
   background: linear-gradient(to right, #5B9EA7 25%, #4E6C9A 50%, #595959 75%);
  		  -webkit-background-clip: text;
+      background-clip: text;
   		-webkit-text-fill-color: transparent;
 }
 
 .format {
     text-align: center;
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(0,0,0,0.3);
     border-image: var(--gradient);
     border-width: 3px;
     border-style: solid;
@@ -25,7 +26,7 @@
       
       .format2 {
           text-align: center;
-          background-color: rgba(255,255,255,0.1);
+          background-color: rgba(0,0,0,0.3);
           border-image: var(--gradient);
           border-width: 3px;
           border-style: solid;
@@ -45,7 +46,7 @@
 
   .pokemon {
     text-align: center;
-    background-color:rgba(255,255,255,0.1);
+    background-color:rgba(0,0,0,0.3);
     border-image:  var(--gradient);
     border-width: 3px;
     border-style: solid;
@@ -63,7 +64,7 @@
     font-weight: bold;
     font-size: 2.5vw;
     text-align: center;
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(0,0,0,0.3);
     border-image: var(--gradient);
     border-width: 3px;
     border-style: solid;
