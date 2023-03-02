@@ -10,6 +10,16 @@
       background-clip: text;
   		-webkit-text-fill-color: transparent;
 }
+.titleText2 {
+  text-align: left;
+  background: linear-gradient(to right, #ffffff, #5B9EA7, #4E6C9A);
+ 		  -webkit-background-clip: text;
+      background-clip: text;
+  		-webkit-text-fill-color: transparent;
+      padding-left: 60px;
+      font-size: 2.5vw;
+
+}
 
 .format {
     text-align: center;
@@ -111,6 +121,21 @@
          box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
          transition: 0.4s ease-in-out;
  }
+ .buton3{
+  cursor: pointer;
+       border: 1px solid #3498db;
+       background-color: rgba(0, 0, 0, 0.5);
+       font-family: Arial;
+       font-weight: bold;
+       height: 2.0em;
+       width: 200px;
+       color: #3498db;
+       font-size: 1.5em;
+       box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+       transition: 0.4s ease-in-out;
+       display: inline-block;
+       padding-top: -2200px;
+}
  .buton:hover{
   border: 1px solid #31528B;
   color: #31528B;
