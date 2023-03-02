@@ -1,5 +1,6 @@
 :root {
     --gradient: linear-gradient(to right, #52BDBD , #C49428 ) 1;
+    
   }
 
 .titleText {
@@ -81,7 +82,7 @@
     text-align: center;
     font-size: 4.5vw;
     font-weight: bold;
-    background: linear-gradient(to right,  #DADADA 25%, #5B9EA7 50%, #4E6C9A 75%);
+    background: linear-gradient(to right, #5B9EA7 25%, #4E6C9A 50%, #595959 75%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -143,4 +144,7 @@
     height: 109vh;
     margin: auto;
     width: 100%;
+  }
+  .msg{
+    color: white;
   }
