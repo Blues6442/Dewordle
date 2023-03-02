@@ -148,3 +148,36 @@
   .msg{
     color: white;
   }
+
+  .theDex {
+    border-image: var(--gradient);
+    border-width: 3px;
+    border-style: solid;
+    text-align: center;
+  }
+
+  .pokedexPage {
+    border: 3px solid black;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+  }
+
+  .pokedexName {
+    font-size: 3.0vw;
+    font-family: Arial;
+    font-weight: bold;
+    background-color: #DADADA;
+    -webkit-background-clip: text;
+    background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  }
+
+  .pokedexInfo {
+    font-size: 2.0vw;
+    font-family: Arial;
+    font-weight: bold;
+    background-color: #DADADA;
+    -webkit-background-clip: text;
+    background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  }
