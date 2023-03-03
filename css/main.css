@@ -175,8 +175,8 @@
   }
 
   body {
-    background-image: url("https://i.pinimg.com/originals/af/5e/d2/af5ed23d4007c6fdb2a4693534c16ffa.jpg");
-      /*background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Solid_white.svg/2048px-Solid_white.svg.png")*/
+    background-image: url("../bg/af5ed23d4007c6fdb2a4693534c16ffa.jpg");
+      /*background-image: url("bg/mbd.jpg")*/
     background-position: center;
     background-size: cover;
     height: 109vh;
