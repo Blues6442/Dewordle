@@ -2007,13 +2007,19 @@ var count = 0;
 let find = document.getElementById("find");
 find.onclick =  plswork 
 function plswork(){
-searchTerm = document.getElementById("pname").value.toString();
- //Counts Guess
- score = score + 1;
- count = count + 1;
- //searchPokemon(searchTerm, "pokemon");
+  
+  searchTerm = document.getElementById("pname").value.toString();
+
+if(Dex.some(pokemon => pokemon.name.toLowerCase === searchTerm.toLowerCase)){
+  //searchPokemon(searchTerm, "pokemon");
  console.log('Finding:' + searchTerm);
  var guess = findPokemonByName(searchTerm);
+ if(guess!=undefined){
+ score = score + 1;
+ count = count + 1;
+ 
+  
+ 
  console.log('Guess was: ' + guess.name);
  //console.log('Hidden is: ' + hiddenPokemon.name);
  var secrt = ' '
@@ -2024,7 +2030,7 @@ searchTerm = document.getElementById("pname").value.toString();
  } else if ((guess.name == "Dewott") && (hiddenPokemon.name === "Dewott")) {
    secrt = "It's a secret Dewott!!!";
  }
-
+  
  //Winning statement
 
  if (guess.name == hiddenPokemon.name) {
@@ -2134,8 +2140,12 @@ searchTerm = document.getElementById("pname").value.toString();
    printMessage(("------------------------------------"), formId);
  }
  document.getElementById("pname").value = "";
-}
 
+}else{
+  alert("That is not a Generation V Pokemon!");
+}
+}
+}
 //await both random and guess to compare
 var formId = "pokemon";
 
