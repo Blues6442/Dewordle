@@ -1954,6 +1954,11 @@ form.className = "msg"
      form.appendChild(div);
    }
  }
+ const imgdiv = document.createElement('div');
+ const img = document.createElement('img');
+ img.src = 'sprt/' + randomObject['name'].toLowerCase() + '.gif';
+ imgdiv.appendChild(img);
+ form.appendChild(imgdiv);
 }
 
 function printMessage(message, formId) {
@@ -2002,13 +2007,19 @@ var count = 0;
 let find = document.getElementById("find");
 find.onclick =  plswork 
 function plswork(){
-searchTerm = document.getElementById("pname").value.toString();
- //Counts Guess
- score = score + 1;
- count = count + 1;
- //searchPokemon(searchTerm, "pokemon");
+  
+  searchTerm = document.getElementById("pname").value.toString();
+
+if(Dex.some(pokemon => pokemon.name.toLowerCase === searchTerm.toLowerCase)){
+  //searchPokemon(searchTerm, "pokemon");
  console.log('Finding:' + searchTerm);
  var guess = findPokemonByName(searchTerm);
+ if(guess!=undefined){
+ score = score + 1;
+ count = count + 1;
+ 
+  
+ 
  console.log('Guess was: ' + guess.name);
  //console.log('Hidden is: ' + hiddenPokemon.name);
  var secrt = ' '
@@ -2019,7 +2030,7 @@ searchTerm = document.getElementById("pname").value.toString();
  } else if ((guess.name == "Dewott") && (hiddenPokemon.name === "Dewott")) {
    secrt = "It's a secret Dewott!!!";
  }
-
+  
  //Winning statement
 
  if (guess.name == hiddenPokemon.name) {
@@ -2119,11 +2130,22 @@ searchTerm = document.getElementById("pname").value.toString();
      printMessage(guess.name + " : ❌", formId);
    }
 
+   const imgdiv = document.createElement('div');
+   const img = document.createElement('img');
+   img.src = 'sprt/' + guess.name.toLowerCase() + '.gif';
+   imgdiv.appendChild(img);
+   const form = document.getElementById(formId);
+   form.insertBefore(imgdiv, form.firstChild);
+
    printMessage(("------------------------------------"), formId);
  }
  document.getElementById("pname").value = "";
-}
 
+}else{
+  alert("That is not a Generation V Pokemon!");
+}
+}
+}
 //await both random and guess to compare
 var formId = "pokemon";
 
