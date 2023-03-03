@@ -771,18 +771,6 @@ let Dex = [{
    spe: 95
  },
  {
-   name: "Darmanitan Zen",
-   type1: "Fire",
-   type2: "Psychic",
-   Evolution: 2,
-   hp: 105,
-   atk: 30,
-   def: 105,
-   spa: 140,
-   spdef: 105,
-   spe: 55
- },
- {
    name: "Maractus",
    type1: "Grass",
    type2: "None",

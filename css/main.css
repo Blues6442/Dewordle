@@ -226,6 +226,18 @@
     float: center;
   }
 
+  img.spriteTooWide{
+    width: 10.0vw;
+    height: 7.5vw;
+    float: center;
+  }
+
+  img.spriteTooTall{
+    width: 5.0;
+    height: 7.5vw;
+    float: center;
+  }
+
   .pokedexSprite {
     width: 2.0vw;
     height: 2.0vw;
