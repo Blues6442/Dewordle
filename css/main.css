@@ -34,6 +34,19 @@
     margin-right: 5%;
     margin-left: 5%;
   }
+  .format3 {
+    text-align: center;
+    background-color: rgba(134, 134, 134, 0.9);
+    border-image: var(--gradient);
+    border-width: 3px;
+    border-style: solid;
+    width: 90%;
+    padding-top: 25px;
+    padding-bottom: 40px;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
       
       .format2 {
           text-align: center;
