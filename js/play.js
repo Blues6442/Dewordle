@@ -1954,6 +1954,11 @@ form.className = "msg"
      form.appendChild(div);
    }
  }
+ const imgdiv = document.createElement('div');
+ const img = document.createElement('img');
+ img.src = 'sprt/' + randomObject['name'].toLowerCase() + '.gif';
+ imgdiv.appendChild(img);
+ form.appendChild(imgdiv);
 }
 
 function printMessage(message, formId) {
@@ -2118,6 +2123,13 @@ searchTerm = document.getElementById("pname").value.toString();
    if (guess.name != hiddenPokemon.name) {
      printMessage(guess.name + " : ❌", formId);
    }
+
+   const imgdiv = document.createElement('div');
+   const img = document.createElement('img');
+   img.src = 'sprt/' + guess.name.toLowerCase() + '.gif';
+   imgdiv.appendChild(img);
+   const form = document.getElementById(formId);
+   form.insertBefore(imgdiv, form.firstChild);
 
    printMessage(("------------------------------------"), formId);
  }
