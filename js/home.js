@@ -7,8 +7,8 @@ document.getElementById("howto").onclick = function () {
   var audio = new Audio('https://archive.org/download/twitter-1355278061181280262/1355278061181280262.mp4');
 document.getElementById("music").onclick = function(){
 
-    document.getElementById("music").style.display = 'none';
-   document.getElementById("musicOff").style.display = 'initial';
+    document.getElementById("musicOff").style.display = 'none';
+   document.getElementById("music").style.display = 'initial';
 
 audio.play();
    
@@ -19,14 +19,14 @@ audio.play();
 }, false);
 }
 
-document.getElementById("musicOff").onclick = function(){
-  document.getElementById("music").style.display = 'initial';
-  document.getElementById("musicOff").style.display = 'none';
+document.getElementById("music").onclick = function(){
+  document.getElementById("musicOff").style.display = 'initial';
+  document.getElementById("music").style.display = 'none';
 
   audio.pause();
 }
 
-document.getElementById("musicOff").style.display = 'none';
+document.getElementById("music").style.display = 'none';
 
 
 
