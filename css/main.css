@@ -12,13 +12,17 @@
 }
 .titleText2 {
   text-align: left;
+  font-family: Arial;
+  font-weight: bold;
+  margin-right: auto;
+  margin-left: auto;
   background: linear-gradient(to right, #ffffff, #5B9EA7, #4E6C9A);
  		  -webkit-background-clip: text;
       background-clip: text;
   		-webkit-text-fill-color: transparent;
       padding-left: 60px;
-      font-size: 2.5vw;
-
+      font-size: 5.5vw;
+      page-break-after: always;
 }
 
 .format {
