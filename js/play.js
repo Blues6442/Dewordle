@@ -1,4 +1,4 @@
-var audio = new Audio('https://archive.org/download/twitter-1355278061181280262/1355278061181280262.mp4');
+var audio = new Audio('https://ia801606.us.archive.org/10/items/battle-vs-subway-boss-pokmon-masters-ex-hq/Battle%20Vs%20Subway%20Boss%20Pokmon%20Masters%20EX%20HQ%20.mp3');
 document.getElementById("music").onclick = function(){
 
     document.getElementById("music").style.display = 'none';
