@@ -28,6 +28,3 @@ document.getElementById("howto").onclick = function () {
   
   document.getElementById("musicOff").style.display = 'none';
   
-
-
-

@@ -4,25 +4,13 @@
   }
 
 .titleText {
+  font-family: arial;
+  font-weight: bold;
   text-align: center;
   background: linear-gradient(to right,  #DADADA 25%, #5B9EA7 50%, #4E6C9A 75%);
  		  -webkit-background-clip: text;
       background-clip: text;
   		-webkit-text-fill-color: transparent;
-}
-.titleText2 {
-  text-align: left;
-  font-family: Arial;
-  font-weight: bold;
-  margin-right: auto;
-  margin-left: auto;
-  background: linear-gradient(to right, #ffffff, #5B9EA7, #4E6C9A);
- 		  -webkit-background-clip: text;
-      background-clip: text;
-  		-webkit-text-fill-color: transparent;
-      padding-left: 60px;
-      font-size: 5.5vw;
-      page-break-after: always;
 }
 
 .format {
@@ -40,7 +28,8 @@
   }
   .format3 {
     text-align: center;
-    background-color: rgba(134, 134, 134, 0.9);
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 0.7);
     border-image: var(--gradient);
     border-width: 3px;
     border-style: solid;
@@ -50,6 +39,7 @@
     margin-top: 5%;
     margin-right: 5%;
     margin-left: 5%;
+    font-family: arial;
   }
       
       .format2 {
@@ -121,9 +111,10 @@
     font-weight: bold;
   }
 .search{
-    font-size: 3em;
+    font-size: 4.0vw;
     font-family: Arial;
     font-weight: bold;
+    float: center;
 }
   .buton{
     cursor: pointer;
@@ -137,7 +128,9 @@
          font-size: 1.5em;
          box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
          transition: 0.4s ease-in-out;
+         display: inline-block;
  }
+
  .buton3{
   cursor: pointer;
        border: 1px solid #3498db;
@@ -230,18 +223,12 @@
     float: center;
   }
 
-  img.spriteTooWide{
-    width: 10.0vw;
-    height: 7.5vw;
-    float: center;
-  }
-
   img.spriteTooTall{
     width: 5.0;
     height: 7.5vw;
     float: center;
   }
-
+  
   .pokedexSprite {
     width: 2.0vw;
     height: 2.0vw;
