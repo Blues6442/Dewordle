@@ -262,7 +262,8 @@ if(Dex.some(pokemon => pokemon.name.toLowerCase === searchTerm.toLowerCase)){
    imgdiv.appendChild(img);
    const form = document.getElementById(formId);
    form.insertBefore(imgdiv, form.firstChild);
-
+   var limit = 6-count;
+  printMessage(("You have " + limit + " guess(es) left!"), formId);
    printMessage(("------------------------------------"), formId);
  }
  document.getElementById("pname").value = "";
