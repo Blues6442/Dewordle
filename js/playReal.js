@@ -150,11 +150,11 @@ if(Dex.some(pokemon => pokemon.name.toLowerCase === searchTerm.toLowerCase)){
  } else if ((guess.name == "Dewott") && (hiddenPokemon.name === "Dewott")) {
    secrt = "It's a secret Dewott!!!";
  }
-  
+ var limitBreak = 8
  //Winning statement
  if ((guess.name == hiddenPokemon.name) || (score === 6)) {
   if ((highscoreR != null) && ((guess.name == hiddenPokemon.name) )) {
-    if((score <=  6) && (guess.name == hiddenPokemon.name)){
+    if((score <=  limitBreak) && (guess.name == hiddenPokemon.name)){
     if ((score < highscoreR) || (score === 1)) {
       localStorage.setItem("highscoreR", score);
       alert("You got the high Score", formId);
@@ -169,7 +169,7 @@ if(Dex.some(pokemon => pokemon.name.toLowerCase === searchTerm.toLowerCase)){
 
   printObject(hiddenPokemon, formId);
   printMessage(secrt, formId);
-  if((score <=  6) && (guess.name == hiddenPokemon.name)){
+  if((score <=  limitBreak) && (guess.name == hiddenPokemon.name)){
   printMessage(" YOU GUESSED CORRECTLY AFTER " + count + " GUESS(ES)! THE POKEMON WAS : ", formId);
   }else{
     printMessage(" BETTER LUCK NEXT TIME! THE POKEMON WAS : ", formId);
@@ -262,7 +262,7 @@ if(Dex.some(pokemon => pokemon.name.toLowerCase === searchTerm.toLowerCase)){
    imgdiv.appendChild(img);
    const form = document.getElementById(formId);
    form.insertBefore(imgdiv, form.firstChild);
-   var limit = 6-count;
+   var limit = limitBreak - count;
   printMessage(("You have " + limit + " guess(es) left!"), formId);
    printMessage(("------------------------------------"), formId);
  }
