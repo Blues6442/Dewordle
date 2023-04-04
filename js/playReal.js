@@ -29,15 +29,15 @@ var txt;
 // this is where the array used to be
 
 
-var highscore = localStorage.getItem("highscore");
+var highscoreR = localStorage.getItem("highscoreR");
 document.getElementById("howto").onclick = function () {
   location.href = "howToPlay.html";
 };
 document.getElementById("home").onclick = function () {
   location.href = "index.html";
 };
-document.getElementById("playR").onclick = function () {
-  location.href = "playReal.html";
+document.getElementById("practice").onclick = function () {
+  location.href = "play.html";
 };
 //document.getElementById("dexList").onclick = function() {
  //alert("Victini, Snivy, Servine, Serperior, Tepig, Pignite, Emboar, Oshawott, Dewott, Samurott, Patrat, Watchog, Lillipup, Herdier, Stoutland, Purrloin, Liepard, Pansage, Simisage, Pansear, Simisear, Panpour, Simipour, Munna, Musharna, Pidove, Tranquill, Unfezant, Blitzle, Zebstrika, Roggenrola, Boldore, Gigalith, Woobat, Swoobat, Drilbur, Excadrill, Audino, Timburr, Gurdurr, Conkeldurr, Tympole, Palpitoad, Seismitoad, Throh, Sawk, Sewaddle, Swadloon, Leavanny, Venipede, Whirlipede, Scolipede, Cottonee, Whimsicott, Petilil, Lilligant, Basculin, Sandile, Krokorok, Krookodile, Darumaka, Darmanitan, Darmanitan Zen, Maractus, Dwebble, Crustle, Scraggy, Scrafty, Sigilyph, Yamask, Cofagrigus, Tirtouga, Carracosta, Archen, Archeops, Trubbish, Garbodor, Zorua, Zoroark, Minccino, Cinccino, Gothita, Gothorita, Gothitelle, Solosis, Duosion, Reuniclus, Ducklett, Swanna, Vanillite, Vanillish, Vanilluxe, Deerling, Sawsbuck, Emolga, Karrablast, Escavalier, Foongus, Amoonguss, Frillish, Jellicent, Alomomola, Joltik, Galvantula, Ferroseed, Ferrothorn, Klink, Klang, Klinklang, Tynamo, Eelektrik, Eelektross, Elgyem, Beheeyem, Litwick, Lampent, Chandelure, Axew, Fraxure, Haxorus, Cubchoo, Beartic, Cryogonal, Shelmet, Accelgor, Stunfisk, Mienfoo, Mienshao, Druddigon, Golett, Golurk, Pawniard, Bisharp, Bouffalant, Rufflet, Braviary, Vullaby, Mandibuzz, Heatmor, Durant, Deino, Zweilous, Hydreigon, Larvesta, Volcarona, Cobalion, Terrakion, Virizion, Tornadus, Thundurus, Reshiram, Zekrom, Landorus, Kyurem, Keldeo, Meloetta, Genesect")
@@ -150,30 +150,36 @@ if(Dex.some(pokemon => pokemon.name.toLowerCase === searchTerm.toLowerCase)){
  } else if ((guess.name == "Dewott") && (hiddenPokemon.name === "Dewott")) {
    secrt = "It's a secret Dewott!!!";
  }
-  
+ var limitBreak = 8
  //Winning statement
+ if ((guess.name == hiddenPokemon.name) || (score === 6)) {
+  if ((highscoreR != null) && ((guess.name == hiddenPokemon.name) )) {
+    if((score <=  limitBreak) && (guess.name == hiddenPokemon.name)){
+    if ((score < highscoreR) || (score === 1)) {
+      localStorage.setItem("highscoreR", score);
+      alert("You got the high Score", formId);
+    }
+  }else if((highscoreR != null) && ((guess.name == hiddenPokemon.name) )) {
+    
+    localStorage.setItem("highscoreR", score);
+    alert("You got the high Score",formId);
+    
+  }
+}
 
- if (guess.name == hiddenPokemon.name) {
+  printObject(hiddenPokemon, formId);
+  printMessage(secrt, formId);
+  if((score <=  limitBreak) && (guess.name == hiddenPokemon.name)){
+  printMessage(" YOU GUESSED CORRECTLY AFTER " + count + " GUESS(ES)! THE POKEMON WAS : ", formId);
+  }else{
+    printMessage(" BETTER LUCK NEXT TIME! THE POKEMON WAS : ", formId);
+  }
 
-   if (highscore != null) {
-     if ((score < highscore) || (score === 1)) {
-       localStorage.setItem("highscore", score);
-       alert("You got the high Score", formId);
-     }
-   } else {
-     localStorage.setItem("highscore", score);
-     alert("You got the high Score",formId);
-   }
-   printObject(guess, formId);
-   printMessage(secrt, formId);
-   printMessage(" YOU GUESSED CORRECTLY AFTER " + count + " GUESS(ES)! THE POKEMON WAS : ", formId);
+  printMessage(("------------------------------------"), formId);
+  printMessage("Hi-Score: " + localStorage.getItem("highscoreR") + " Guess(es)", formId);
+  hideUnhide();
 
-
-   printMessage(("------------------------------------"), formId);
-   printMessage("Hi-Score: " + localStorage.getItem("highscore") + " Guess(es)", formId);
-   hideUnhide();
-
- } else if (guess.name !== hiddenPokemon.name) {
+ }else if (guess.name !== hiddenPokemon.name) {
 
 
      //console.log("guess:");
@@ -256,7 +262,8 @@ if(Dex.some(pokemon => pokemon.name.toLowerCase === searchTerm.toLowerCase)){
    imgdiv.appendChild(img);
    const form = document.getElementById(formId);
    form.insertBefore(imgdiv, form.firstChild);
-
+   var limit = limitBreak - count;
+  printMessage(("You have " + limit + " guess(es) left!"), formId);
    printMessage(("------------------------------------"), formId);
  }
  document.getElementById("pname").value = "";

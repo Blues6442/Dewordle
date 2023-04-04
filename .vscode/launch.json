@@ -8,8 +8,7 @@
             "type": "msedge",
             "request": "launch",
             "name": "Open index.html",
-            "file": "C:/Users/noaha/dewordle/dewordle.github.io/pokedex.html"
-            "file": "${workspaceFolder}\\index.html"
+            "file": "${workspaceFolder}/index.html"
         }
     ]
 }
