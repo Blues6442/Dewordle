@@ -4,7 +4,7 @@ document.getElementById("home").onclick = function () {
   document.getElementById("play").onclick = function () {
     location.href = "play.html";
   };
-  var audio = new Audio('https://archive.org/download/twitter-1355278061181280262/1355278061181280262.mp4');
+  var audio = new Audio('https://ia904501.us.archive.org/9/items/28-battle-trainer/21%20-%20A%20Lullaby%20for%20Trains%20%5BBonus%20Track%5D.mp3');
 document.getElementById("music").onclick = function(){
 
     document.getElementById("music").style.display = 'none';
