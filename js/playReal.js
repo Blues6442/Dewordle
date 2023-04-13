@@ -164,6 +164,9 @@ if(Dex.some(pokemon => pokemon.name.toLowerCase === searchTerm.toLowerCase)){
     localStorage.setItem("highscoreR", score);
     alert("You got the high Score",formId);
     
+  }else if(score <= limitBreak) {
+    localStorage.setItem("highscore", score);
+    alert("You got the high Score",formId);
   }
 }
 
