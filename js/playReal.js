@@ -152,7 +152,7 @@ if(Dex.some(pokemon => pokemon.name.toLowerCase === searchTerm.toLowerCase)){
  }
  var limitBreak = 8
  //Winning statement
- if ((guess.name == hiddenPokemon.name) || (score === 6)) {
+ if ((guess.name == hiddenPokemon.name) || (score === limitBreak)) {
   if ((highscoreR != null) && ((guess.name == hiddenPokemon.name) )) {
     if((score <=  limitBreak) && (guess.name == hiddenPokemon.name)){
     if ((score < highscoreR) || (score === 1)) {
