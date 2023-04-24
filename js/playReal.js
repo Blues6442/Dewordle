@@ -1,3 +1,4 @@
+
 var audio = new Audio('https://ia801606.us.archive.org/10/items/battle-vs-subway-boss-pokmon-masters-ex-hq/Battle%20Vs%20Subway%20Boss%20Pokmon%20Masters%20EX%20HQ%20.mp3');
 document.getElementById("music").onclick = function(){
 
@@ -164,9 +165,11 @@ if(Dex.some(pokemon => pokemon.name.toLowerCase === searchTerm.toLowerCase)){
     localStorage.setItem("highscoreR", score);
     alert("You got the high Score",formId);
     
-  }else if(score <= limitBreak) {
-    localStorage.setItem("highscore", score);
+  }else if(highscoreR == null){
+    localStorage.setItem("highscoreR", score);
     alert("You got the high Score",formId);
+  }else{
+    alert("Better luck next time!",formId);
   }
 }
 
