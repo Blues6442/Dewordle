@@ -164,13 +164,12 @@ if(Dex.some(pokemon => pokemon.name.toLowerCase === searchTerm.toLowerCase)){
     
     localStorage.setItem("highscoreR", score);
     alert("You got the high Score",formId);
-    
-  }else if(highscoreR == null){
-    localStorage.setItem("highscoreR", score);
-    alert("You got the high Score",formId);
-  }else{
-    alert("Better luck next time!",formId);
   }
+}else if((highscoreR == null) || (guess.name == hiddenPokemon.name)){
+  localStorage.setItem("highscoreR", score);
+  alert("You got the high Score",formId);
+}else{
+  alert("Better luck next time!",formId);
 }
 
   printObject(hiddenPokemon, formId);
