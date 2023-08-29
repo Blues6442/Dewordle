@@ -30,7 +30,7 @@ var txt;
 // this is where the array used to be
 
 
-var highscoreR = localStorage.getItem("highscoreR2");
+var highscoreR2 = localStorage.getItem("highscoreR2");
 document.getElementById("howto").onclick = function () {
   location.href = "howToPlay.html";
 };
@@ -105,17 +105,17 @@ function getRandomPokemon(array) {
 //Randomize
 
 function reroll() {
- outputRandomObject(fullDex, "pokemon")
+ outputRandomObject(DexFull, "pokemon")
 }
 
 ////////////
-const hiddenPokemon = getRandomPokemon(fullDex);
+const hiddenPokemon = getRandomPokemon(DexFull);
 //console.log('Hidden pokemon is: ' + hiddenPokemon.name);
 
 
 function findPokemonByName(searchTerm) {
 
- pmon = fullDex.find(o => o.name.toLowerCase() === searchTerm.toLowerCase());
+ pmon = DexFull.find(o => o.name.toLowerCase() === searchTerm.toLowerCase());
  return pmon;
 }
 
@@ -131,7 +131,7 @@ function plswork(){
   
   searchTerm = document.getElementById("pname").value.toString();
 
-if(fullDex.some(pokemon => pokemon.name.toLowerCase === searchTerm.toLowerCase)){
+if(DexFull.some(pokemon => pokemon.name.toLowerCase === searchTerm.toLowerCase)){
   //searchPokemon(searchTerm, "pokemon");
  console.log('Finding:' + searchTerm);
  var guess = findPokemonByName(searchTerm);
@@ -154,19 +154,19 @@ if(fullDex.some(pokemon => pokemon.name.toLowerCase === searchTerm.toLowerCase))
  var limitBreak = 8
  //Winning statement
  if ((guess.name == hiddenPokemon.name) || (score === limitBreak)) {
-  if ((highscoreR != null) && ((guess.name == hiddenPokemon.name) )) {
+  if ((highscoreR2 != null) && ((guess.name == hiddenPokemon.name) )) {
     if((score <=  limitBreak) && (guess.name == hiddenPokemon.name)){
-    if ((score < highscoreR) || (score === 1)) {
-      localStorage.setItem("highscoreR", score);
+    if ((score < highscoreR2) || (score === 1)) {
+      localStorage.setItem("highscoreR2", score);
       alert("You got the high Score", formId);
     }
-  }else if((highscoreR != null) && ((guess.name == hiddenPokemon.name) )) {
+  }else if((highscoreR2 != null) && ((guess.name == hiddenPokemon.name) )) {
     
-    localStorage.setItem("highscoreR", score);
+    localStorage.setItem("highscoreR2", score);
     alert("You got the high Score",formId);
   }
-}else if((highscoreR == null) || (guess.name == hiddenPokemon.name)){
-  localStorage.setItem("highscoreR", score);
+}else if((highscoreR2 == null) || (guess.name == hiddenPokemon.name)){
+  localStorage.setItem("highscoreR2", score);
   alert("You got the high Score",formId);
 }else{
   alert("Better luck next time!",formId);
@@ -181,7 +181,7 @@ if(fullDex.some(pokemon => pokemon.name.toLowerCase === searchTerm.toLowerCase))
   }
 
   printMessage(("------------------------------------"), formId);
-  printMessage("Hi-Score: " + localStorage.getItem("highscoreR") + " Guess(es)", formId);
+  printMessage("Hi-Score: " + localStorage.getItem("highscoreR2") + " Guess(es)", formId);
   hideUnhide();
 
  }else if (guess.name !== hiddenPokemon.name) {
@@ -274,7 +274,7 @@ if(fullDex.some(pokemon => pokemon.name.toLowerCase === searchTerm.toLowerCase))
  document.getElementById("pname").value = "";
 
 }else{
-  alert("That is not a Generation V Pokemon!");
+  alert("That is not a Pokemon!");
 }
 }
 }
@@ -308,8 +308,8 @@ function lightwell(request, response) {
    return;
  }
 
- for (i = 0, l = fullDex.length; i < l; i++) {
-   obj = fullDex[i];
+ for (i = 0, l = DexFull.length; i < l; i++) {
+   obj = DexFull[i];
    if (hasMatch(obj.name)) {
      matches.push(obj);
    }
