@@ -237,7 +237,13 @@ if(DexFull.some(pokemon => pokemon.name.toLowerCase === searchTerm.toLowerCase))
    } else {
      printMessage((guess.spe + " SPE : ▼"), formId);
    }
-
+   if (guess.gen < hiddenPokemon.gen) {
+    printMessage((guess.gen + "	GEN : ▲"), formId);
+  } else if (guess.gen == hiddenPokemon.gen) {
+    printMessage((guess.gen + " GEN : ✔️"), formId);
+  } else {
+    printMessage((guess.gen + " GEN : ▼"), formId);
+  }
    if ((guess.Evolution < hiddenPokemon.Evolution) || (guess.Evolution > hiddenPokemon.Evolution)) {
      printMessage((guess.Evolution + " Evolution(s) : ❌"), formId);
    } else {
