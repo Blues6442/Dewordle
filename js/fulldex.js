@@ -13,6 +13,32 @@ let DexFull = [
     spe: 45
     },
     {
+      name: "Ivysaur",
+      type1: "Grass",
+      type2: "Poison",
+      Evolution: 3,
+      gen: 1,
+      hp: 60,
+      atk: 62,
+      def: 63,
+      spa: 80,
+      spdef: 80,
+      spe: 60
+      },
+      {
+        name: "Venusaur",
+        type1: "Grass",
+        type2: "Poison",
+        Evolution: 3,
+        gen: 1,
+        hp: 80,
+        atk: 82,
+        def: 83,
+        spa: 100,
+        spdef: 100,
+        spe: 80
+        },   
+    {
     name: "Victini",
     type1: "Psychic",
     type2: "Fire",

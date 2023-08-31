@@ -151,7 +151,7 @@ if(DexFull.some(pokemon => pokemon.name.toLowerCase === searchTerm.toLowerCase))
  } else if ((guess.name == "Dewott") && (hiddenPokemon.name === "Dewott")) {
    secrt = "It's a secret Dewott!!!";
  }
- var limitBreak = 8
+ var limitBreak = 12
  //Winning statement
  if ((guess.name == hiddenPokemon.name) || (score === limitBreak)) {
   if ((highscoreR2 != null) && ((guess.name == hiddenPokemon.name) )) {
